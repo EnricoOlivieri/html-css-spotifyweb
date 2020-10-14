@@ -4,8 +4,28 @@
   box-sizing: border-box;
 }
 
+header{
+  float: left;
+  overflow: hidden;
+}
+
+header::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.white{
+  color: white;
+}
+
 .margin{
   margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-height{
+  height: calc(100% - 70px);
 }
 
 .logo{
@@ -23,7 +43,7 @@
   color: grey;
   float: left;
   width: 300px;
-  height: calc(100% - 100px);
+  height: calc(100vh - 90px);
 }
 
 .nav-bar *{
@@ -66,10 +86,19 @@
   align-items: center;
 }
 
+.upgrate button{
+  background-color: black;
+  border-radius: 32px;
+  border-color: white;
+  color: white;
+  padding: 10px;
+}
+
 .main-window{
+  background-color: #001a33;
   width: calc(100% - 300px);
-  height: calc(100% - 100px);
-  overflow-y: scroll;
+  height: calc(100vh - 90px);
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -88,4 +117,29 @@
 
 .playlist-list ul li{
   margin-top: 20px;
+}
+
+.install-app{
+  margin-top: 50px;
+  height: 70px;
+}
+
+.john-doe img{
+  width: 20px;
+  vertical-align: middle;
+}
+
+.music-player{
+  height: 90px;
+  background-color: #262626;
+}
+
+.sinister{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sinister img{
+  width: 40px;
 }
