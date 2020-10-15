@@ -26,6 +26,7 @@ header::after{
 
 .nav-height{
   height: calc(100% - 70px);
+  font-size: 12px;
 }
 
 .logo{
@@ -100,14 +101,49 @@ header::after{
   height: calc(100vh - 90px);
   overflow-y: auto;
   overflow-x: hidden;
+  padding-top: 90px;
+}
+
+.main-played h2 , h5{
+  color: white;
+}
+
+.main-played p{
+  color: grey;
+  font-size: 10px;
 }
 
 .main-list ul li{
   display: inline;
+  margin-right: 15px;
+  color: grey;
+  font-size: 10px;
 }
 
 .main-list{
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.main-played{
+  margin-left: 10px;
+}
+
+.main-played img{
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.main-container *{
+  margin-right: 5px;
+}
+
+.main-container{
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  margin-bottom: 20px;
 }
 
 .playlist h4{
@@ -120,7 +156,7 @@ header::after{
 }
 
 .install-app{
-  margin-top: 50px;
+  margin-top: 90px;
   height: 70px;
 }
 
@@ -142,4 +178,14 @@ header::after{
 
 .sinister img{
   width: 40px;
+  display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar{
+    width: 100px;
+  }
+  .main-window{
+    width: 100px;
+  }
 }
