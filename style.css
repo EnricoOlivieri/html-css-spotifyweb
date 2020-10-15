@@ -151,12 +151,16 @@ header::after{
   margin-top: 20px;
 }
 
+.playlist-list{
+  overflow: scroll;
+  height: 20%;
+}
+
 .playlist-list ul li{
   margin-top: 20px;
 }
 
 .install-app{
-  margin-top: 90px;
   height: 70px;
 }
 
@@ -168,24 +172,60 @@ header::after{
 .music-player{
   height: 90px;
   background-color: #262626;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sinister{
+.playing{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
-.sinister img{
+.main-controls{
+	position: relative;
+	width: 40%;
+	min-width: 200px;
+}
+
+.music-bar {
+	position: absolute;
+	top: 60%;
+	height: 4px;
+	width: 100%;
+	background-color: black;
+	transform: translateY(-60%);
+}
+
+.mwhite{
+  background-color: white;
+}
+
+.music-bar.mwhite {
+	width: 30%;
+}
+
+.playing img{
   width: 40px;
   display: inline;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.img-cartella img{
+  width: 15px;
 }
 
 @media screen and (max-width: 768px) {
   .nav-bar{
     width: 100px;
   }
+
+  .hidden-xs {
+    display: none;
+  }
+
   .main-window{
-    width: 100px;
+    width: calc(100% - 100px);
   }
 }
